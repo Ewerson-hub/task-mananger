@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Mananger</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="title">
+            <h1>Task Mananger</h1>
+        </div>
+        <div class="insert-task">
+            <label for="task"></label>
+            <input type="text" name="task" id="task" placeholder="Insert task">
+            <button id = "save" onclick="reciveData()">Save</button>
+        </div>
+        <div class="table-task">
+            <table id ="table"class="table separator">
+                <tr class="column-title">
+                    <td colspan="2">Task</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="finish-task" onclick="finishTasks()">Finish task</div>
+    </div>
+    <script src="assets/js/ajax.js"></script>
+</body>
+</html>
